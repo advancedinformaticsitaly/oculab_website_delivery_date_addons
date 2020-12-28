@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+
+		<template id="product" inherit_id="website_sale.product" name="Product">
+			<xpath expr="//div[@id='product_details']/p[hasclass('text-muted')]" position="after">
+				<div style="font-weight:bold;">
+					<span class="delivery_days"/>
+				</div>
+			</xpath>
+		</template>
+
+		<template id="products_item" inherit_id="website_sale.products_item"
+			name="Delivery Days on Grid/List" customize_show="True">
+			<xpath expr="//form//section//div[hasclass('product_price')]"
+				position="after">
+				<span t-set="product_id" t-value="product.product_variant_ids.filtered(lambda l:l.id == product_variant_id)"/>
+				<t t-set="delivery_days" t-value="product_id.get_delivery_days()"/>
+				<div class="font-weight-bold" t-if="delivery_days">
+					Usually Delivered in
+					<span t-esc="delivery_days"/>
+					Days
+				</div>
+			</xpath>
+		</template>
+
+		<template id="cart_lines" inherit_id="website_sale.cart_lines"
+			name="Delivery Date on Cart Lines" customize_show="True">
+			<xpath expr="//t[@t-as='line']//td[hasclass('td-product_name')]"
+				position="inside">
+				<div t-if="line.dispatch_date" class="small">
+					Delivery by :
+					<span t-field="line.dispatch_date" t-options='{"format": "EEE, MMMM dd"}' />
+				</div>
+			</xpath>
+		</template>
+
+	</data>
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="inherit_product_brand_ept_form" model="ir.ui.view">
+        <field name="name">product.brand.ept.form</field>
+        <field name="model">product.brand.ept</field>
+        <field name="inherit_id" ref="emipro_theme_base.product_brand_ept_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet/div[last()]" position="after">
+                <group>
+                    <group>
+                        <field name="product_delivered_days"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
