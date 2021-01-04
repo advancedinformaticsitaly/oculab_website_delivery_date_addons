@@ -1,0 +1,98 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* eq_tommaso_sale_delivery_date_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-30 18:14+0000\n"
+"PO-Revision-Date: 2020-12-30 18:14+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: eq_tommaso_sale_delivery_date_website
+#. openerp-web
+#: code:addons/eq_tommaso_sale_delivery_date_website/static/src/js/main.js:15
+#: code:addons/eq_tommaso_sale_delivery_date_website/static/src/js/main.js:28
+#, python-format
+msgid " Days"
+msgstr " Giorni"
+
+#. module: eq_tommaso_sale_delivery_date_website
+#: model:ir.model,name:eq_tommaso_sale_delivery_date_website.model_res_config_settings
+msgid "Config Settings"
+msgstr "Impostazioni di configurazione"
+
+#. module: eq_tommaso_sale_delivery_date_website
+#: model_terms:ir.ui.view,arch_db:eq_tommaso_sale_delivery_date_website.products_item
+#: model_terms:ir.ui.view,arch_db:eq_tommaso_sale_delivery_date_website.res_config_settings_view_form
+msgid "Days"
+msgstr "Giorni"
+
+#. module: eq_tommaso_sale_delivery_date_website
+#: model_terms:ir.ui.view,arch_db:eq_tommaso_sale_delivery_date_website.res_config_settings_view_form
+msgid "Define your Product Delivered in days."
+msgstr ""
+
+#. module: eq_tommaso_sale_delivery_date_website
+#: model_terms:ir.ui.view,arch_db:eq_tommaso_sale_delivery_date_website.cart_lines
+msgid "Delivery by :"
+msgstr ""
+
+#. module: eq_tommaso_sale_delivery_date_website
+#: code:addons/eq_tommaso_sale_delivery_date_website/models/sale_order.py:32
+#: code:addons/eq_tommaso_sale_delivery_date_website/models/sale_order.py:44
+#, python-format
+msgid "Please enter correct product delivered days."
+msgstr "Inserisci i giorni di consegna del prodotto corretti."
+
+#. module: eq_tommaso_sale_delivery_date_website
+#: model:ir.model,name:eq_tommaso_sale_delivery_date_website.model_product_product
+msgid "Product"
+msgstr "Prodotto"
+
+#. module: eq_tommaso_sale_delivery_date_website
+#: model:ir.model,name:eq_tommaso_sale_delivery_date_website.model_product_brand_ept
+msgid "Product Brand"
+msgstr ""
+
+#. module: eq_tommaso_sale_delivery_date_website
+#: model:ir.model.fields,field_description:eq_tommaso_sale_delivery_date_website.field_product_brand_ept__product_delivered_days
+#: model:ir.model.fields,field_description:eq_tommaso_sale_delivery_date_website.field_res_config_settings__product_delivered_days
+#: model_terms:ir.ui.view,arch_db:eq_tommaso_sale_delivery_date_website.res_config_settings_view_form
+msgid "Product Delivered Days"
+msgstr ""
+
+#. module: eq_tommaso_sale_delivery_date_website
+#: model:ir.model,name:eq_tommaso_sale_delivery_date_website.model_product_template
+msgid "Product Template"
+msgstr "Modello prodotto"
+
+#. module: eq_tommaso_sale_delivery_date_website
+#: model:ir.model,name:eq_tommaso_sale_delivery_date_website.model_sale_order
+msgid "Sale Order"
+msgstr "Ordine di vendita"
+
+#. module: eq_tommaso_sale_delivery_date_website
+#: model_terms:ir.ui.view,arch_db:eq_tommaso_sale_delivery_date_website.products_item
+msgid "Usually Delivered in"
+msgstr "Generalmente consegnato in"
+
+#. module: eq_tommaso_sale_delivery_date_website
+#. openerp-web
+#: code:addons/eq_tommaso_sale_delivery_date_website/static/src/js/main.js:15
+#: code:addons/eq_tommaso_sale_delivery_date_website/static/src/js/main.js:28
+#, python-format
+msgid "Usually Delivered in "
+msgstr "Generalmente consegnato in "
+
+#. module: eq_tommaso_sale_delivery_date_website
+#: code:addons/eq_tommaso_sale_delivery_date_website/models/sale_order.py:61
+#, python-format
+msgid "Usually Delivered in %s Days"
+msgstr ""
