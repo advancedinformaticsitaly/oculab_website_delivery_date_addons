@@ -16,7 +16,7 @@
         * Allows you to change delivery date for multiple product at a single time.
     """,
     'summary': """ This Module allows to create delivery order based on delivery date in sale order line. sale order delivery by date | delivery order by date | sale by delivery date """,
-    'depends' : ['base', 'sale_management', 'sale_stock'],
+    'depends' : ['base', 'sale_management', 'sale_stock','product_pricelist_brand_website_category','theme_clarico'],
     'price': 20,
     'currency': 'EUR',
     'license': 'OPL-1',
