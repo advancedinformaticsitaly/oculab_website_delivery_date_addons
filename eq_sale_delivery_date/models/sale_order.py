@@ -104,7 +104,11 @@ class product_product(models.Model):
     def get_delivery_days(self):
         product_delivered_days = 0
         for product in self:
+<<<<<<< HEAD
             qty_available = product.sudo().qty_available
+=======
+            qty_available = product.qty_available
+>>>>>>> 6b6963e4b3a3af95f4b44fdf8f9a1b181ff14add
             if qty_available:
                 product_delivered_days = int(self.env["ir.config_parameter"].sudo().get_param("eq_tommaso_sale_delivery_date_website.product_delivered_days"))
             else:
