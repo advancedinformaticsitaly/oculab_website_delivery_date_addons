@@ -43,21 +43,4 @@ class product_brand_ept(models.Model):
             if each.product_delivered_days < 0:
                 raise UserError(_('Please enter correct product delivered days.'))
 
-<<<<<<< HEAD
-=======
-
-# class product_product(models.Model):
-#     _inherit = 'product.product'
-
-#     def get_delivery_days(self):
-#         product_delivered_days = 0
-#         for product in self:
-#             qty_available = product.qty_available
-#             if qty_available:
-#                 product_delivered_days = int(self.env["ir.config_parameter"].sudo().get_param("eq_tommaso_sale_delivery_date_website.product_delivered_days"))
-#             else:
-#                 product_delivered_days = product.product_brand_ept_id.product_delivered_days
-#         return product_delivered_days
-
->>>>>>> 6b6963e4b3a3af95f4b44fdf8f9a1b181ff14add
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
